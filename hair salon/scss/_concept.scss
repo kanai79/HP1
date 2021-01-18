@@ -1,0 +1,128 @@
+.concept {
+  width: 100%;
+  height: 1367px;
+  @include tub {
+   height: 1126px;
+  }
+}
+
+.con-bgc {
+  background-color: #A193861F;
+  position: absolute;
+  top: 400px;
+  left: 0;
+  width: 100%;
+  height: 807px;
+  z-index: 1;
+  @include tub {
+    width: 100%;
+    height: 278.8px;
+    position: static;
+  }
+  & .title {
+     position: absolute;
+     top: 656px;
+     @include tub {
+       position: static;
+      padding-top: 95px;
+     }
+    }
+  & .con-image {
+    display: flex;
+    @include tub {
+      justify-content: space-between;
+    }
+    
+    & .con-img1 {
+      background-image: url(../img/component-1.png);
+      width: 52.7%;
+      height: 413px;
+      position: absolute;
+      top: 691px;
+      left: 8.1%;
+      background-size: cover;
+      @include tub {
+        position: static;
+        width: 46.7%;
+        height: 342.7px;
+        background-position: 100% 50%;
+
+      }
+    }
+      & .con-img2 {
+        background-image: url(../img/component-2.png);
+        width: 30.5%;
+        height: 413px;
+        position: absolute;
+        top: 691px;
+        right: 8.1%;
+        background-size: cover;
+        @include tub {
+          position: static;
+          width: 46.7%;
+          height: 342.7px;
+          background-position: 100% 50%;
+        }
+        }
+  }
+}
+
+.con-bgc-2 {
+  background-color: #A1938689;
+  position: absolute;
+  top: 1207px;
+  left: 0;
+  width: 100%;
+  height: 560px;
+  display: flex;
+  justify-content: space-between;
+  @include tub {
+    position: static;
+    width: 100%;
+    height: 848px;
+  }
+  & .con-text{
+    display: flex;
+    justify-content: space-between;
+    padding: 366px 78px 0 68px;
+    @include tub {
+      display: inline-block;
+      padding: 0;
+      
+    }
+  
+  & .hair {
+    color: #fff;
+    font-size: 4.0rem;
+    letter-spacing: 16px;
+    padding-top: 23px;
+    width: 445px;
+    min-width: 445px;
+    @include tub {
+      font-size: 2.9rem;
+      letter-spacing: 11.4px;
+      text-align: center;
+      padding-top: 338px;
+      width: 100%;
+
+    }
+  }
+  & .con-info {
+    width: 422px;
+    height: 130px;
+    font-size: 1.6rem;
+    letter-spacing: 1.6px;
+    line-height: 26px;
+    color: #fff;
+    @include tub {
+      font-size: 2.5rem;
+      width: 100%;
+      height: 334px;
+      line-height: 36px;
+      padding-top: 28.5px;
+      letter-spacing: 2.5px;
+      font-family: serif;
+    }
+  }
+ }
+}

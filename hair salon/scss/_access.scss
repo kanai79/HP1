@@ -1,0 +1,99 @@
+.access {
+  & .ac-bgc {
+    background-color: #A193861F;
+    width: 100%;
+    height: 757px;
+    position: relative;
+    @include tub {
+      height: 147vh;
+    }
+  }
+  & .title {
+    position: absolute;
+    top: 261px;
+    @include tub {
+      position: static;
+
+    }
+  }
+  & .ac-wrap {
+      width: 100%;
+      height: 396px;
+      display: flex;
+      position: absolute;
+      top: 291px;
+      @include tub {
+        position: static;
+        flex-direction: column;
+        height: 106vh;
+      }
+      & .ac-item {
+        background-color: #D0C5BA;
+        width: 39.5%;
+        position: relative;
+        @include tub {
+          width: 100%;
+          height: 447px;
+          order: 2;
+        }
+        & .ac-content {
+          width: 210px;
+          height: 192px;
+          position: absolute;
+          top: 101px;
+          left: 104px;
+          @include tub {
+            width: 63%;
+            height: 304px;
+            position: absolute;
+            top: 47px;
+            left: 31px;
+
+          }
+
+          & .shop {
+            color: #00000038;
+            font-size: 2.4rem;
+            letter-spacing: 2.4px;
+            @include tub {
+              font-size: 3.8rem;
+              letter-spacing: 3.8px;
+            }
+            
+          }
+          & .address {
+            color: #fff;
+            font-size: 1.6rem;
+            letter-spacing: 1.6px;
+            @include tub {
+              font-size: 2.5rem;
+              letter-spacing: 2.5px;
+            }
+        }
+      }
+    }
+        & .map {
+          width: 60.5%;
+          @include tub {
+            width: 100%;
+            height: 366px;
+            order: 1;
+          }
+        }
+  }
+}
+
+th {
+  font-weight: normal;
+  text-align: left;
+  padding-top: 24px;
+  @include tub {
+    padding-top: 38px;
+  }
+  &:nth-child(1) {
+    padding-top: 30px;
+    @include tub {
+      padding-top: 47px;
+    }
+  }
+}
